@@ -1,0 +1,16 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_1" [label="{{⊕|{{ordinal_wo_oexp_b_a|bot_bo1343651123od_b_b|r}|=|bot_bo1798880249_b_a_b}}}", fillcolor="#dcfce7", color="#22c55e", penwidth="1.1", URL="c_0_1.html", target="_self", tooltip="c_0_1 (conjecture)", shape="Mrecord"];
+  "c_0_8" [label="{{⊖|{{ordinal_wo_oexp_b_a|bot_bo1343651123od_b_b|r}|=|bot_bo1798880249_b_a_b}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_8.html", target="_self", tooltip="c_0_8 (negated_conjecture)", shape="Mrecord"];
+  "c_0_13" [label="{{⊖|{{ordinal_wo_oexp_b_a|bot_bo1343651123od_b_b|r}|=|bot_bo1798880249_b_a_b}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.8", URL="c_0_13.html", target="_self", tooltip="c_0_13 (negated_conjecture)", shape="Mrecord"];
+  "c_0_20" [label="{{⊖|{{ordinal_wo_oexp_b_a|bot_bo1343651123od_b_b|r}|=|bot_bo1798880249_b_a_b}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_20.html", target="_self", tooltip="c_0_20 (negated_conjecture)", shape="Mrecord"];
+  "c_0_1" -> "c_0_8" [style=dotted];
+  "c_0_8" -> "c_0_13";
+  "c_0_13" -> "c_0_20";
+  { rank=source; "c_0_1"; }
+  { rank=same; "c_0_8"; }
+  { rank=same; "c_0_13"; }
+  { rank=sink; "c_0_20"; }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Summary of Transcendental.thy:4159</title>
+<link rel="stylesheet" href="../data/style.css">
+</head>
+<body>
+
+<main class="step proof-summary">
+  <p class="kicker">Proof</p>
+  <h1>Proof Summary of Transcendental.thy:4159</h1>
+  
+  <section class="proof-summary-section isabelle-statement">
+    <h2>Isabelle Statement</h2>
+    <div class="meta">
+      <span class="pill">source: Transcendental.thy:4159</span>
+      <span class="pill">benchmark: isa/deeper/B-mesh-th0/train2k</span>
+      <span class="pill">problem: problems/HOL/0112_Transcendental/prob_04159_148409.p</span>
+    </div>
+    <h3>Lemma</h3>
+    <div class="isabelle-source-block"><pre class="isabelle-line-numbers" aria-hidden="true">4156
+4157
+4158</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> sin_pi_divide_n_ge_0 [simp]<span class="isar-operator">:</span>
+  <span class="isar-keyword">assumes</span> <span class="isar-string">"n ≠ 0"</span>
+  <span class="isar-keyword">shows</span> <span class="isar-string">"0 ≤ sin (pi/real n)"</span></pre></div>
+    <h3>Proof Excerpt</h3>
+    <div class="isabelle-source-block highlight-last-line"><pre class="isabelle-line-numbers" aria-hidden="true">4156
+4157
+4158
+4159</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> sin_pi_divide_n_ge_0 [simp]<span class="isar-operator">:</span>
+  <span class="isar-keyword">assumes</span> <span class="isar-string">"n ≠ 0"</span>
+  <span class="isar-keyword">shows</span> <span class="isar-string">"0 ≤ sin (pi/real n)"</span>
+  <span class="isar-command">by</span> (rule sin_ge_zero) (use assms <span class="isar-keyword">in</span> <span class="isar-cartouche">‹simp_all add: field_split_simps›</span>)</pre></div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Conjectures</h2>
+    <div class="proof-conjectures">
+      <article class="proof-conjecture">
+<h2><a href="steps/c_0_33.html">c_0_33</a></h2>
+<pre class="formula-pre">ord_less_eq_real <span class="tptp-operator">@</span> zero_zero_real <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> sin_real <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> divide_divide_real <span class="tptp-operator">@</span> pi <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> semiri2110766477t_real <span class="tptp-operator">@</span> n <span class="tptp-punctuation">)</span> <span class="tptp-punctuation">)</span> <span class="tptp-punctuation">)</span></pre>
+</article>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Axioms</h2>
+    <div class="node-list">
+      <span class="node axiom">c_0_0</span>
+<span class="node axiom">c_0_1</span>
+<span class="node axiom">c_0_2</span>
+<span class="node axiom">c_0_3</span>
+<span class="node axiom">c_0_4</span>
+<span class="node axiom">c_0_5</span>
+<span class="node axiom">c_0_6</span>
+<span class="node axiom">c_0_7</span>
+<span class="node axiom">c_0_8</span>
+<span class="node axiom">c_0_9</span>
+<span class="node axiom">c_0_10</span>
+<span class="node axiom">c_0_11</span>
+<span class="node axiom">c_0_12</span>
+<span class="node axiom">c_0_13</span>
+<span class="node axiom">c_0_14</span>
+<span class="node axiom">c_0_15</span>
+<span class="node axiom">c_0_16</span>
+<span class="node axiom">c_0_17</span>
+<span class="node axiom">c_0_18</span>
+<span class="node axiom">c_0_19</span>
+<span class="node axiom">c_0_20</span>
+<span class="node axiom">c_0_21</span>
+<span class="node axiom">c_0_22</span>
+<span class="node axiom">c_0_23</span>
+<span class="node axiom">c_0_24</span>
+<span class="node axiom">c_0_25</span>
+<span class="node axiom">c_0_26</span>
+<span class="node axiom">c_0_27</span>
+<span class="node axiom">c_0_28</span>
+<span class="node axiom">c_0_29</span>
+<span class="node axiom">c_0_30</span>
+<span class="node axiom">c_0_31</span>
+<span class="node axiom">c_0_32</span>
+<span class="node axiom">c_0_34</span>
+<span class="node axiom">c_0_35</span>
+<span class="node axiom">c_0_36</span>
+<span class="node axiom">c_0_37</span>
+<span class="node axiom">c_0_38</span>
+<span class="node axiom">c_0_39</span>
+<span class="node axiom">c_0_40</span>
+<span class="node axiom">c_0_41</span>
+<span class="node axiom">c_0_42</span>
+<span class="node axiom">c_0_43</span>
+<span class="node axiom">c_0_44</span>
+<span class="node axiom">c_0_45</span>
+<span class="node axiom">c_0_46</span>
+<span class="node axiom">c_0_47</span>
+<span class="node axiom">c_0_48</span>
+<span class="node axiom">c_0_49</span>
+<span class="node axiom">c_0_50</span>
+<span class="node axiom">c_0_51</span>
+<span class="node axiom">c_0_52</span>
+<span class="node axiom">c_0_53</span>
+<span class="node axiom">c_0_54</span>
+<span class="node axiom">c_0_55</span>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Final Contradiction</h2>
+    <div class="node-list">
+      <a class="node final-step" href="steps/c_0_323.html">c_0_323</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

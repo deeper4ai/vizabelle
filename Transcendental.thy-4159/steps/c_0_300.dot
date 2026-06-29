@@ -1,0 +1,24 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_8" [label="{{⊕|{{divide_divide_real|X11|{divide_divide_real|X15|X40}}|=|{divide_divide_real|{times_times_real|X11|X40}|X15}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_8.html", target="_self", tooltip="c_0_8 (axiom)", shape="Mrecord"];
+  "c_0_9" [label="{{⊕|{{times_times_real|X11|{divide_divide_real|X15|X40}}|=|{divide_divide_real|{times_times_real|X11|X15}|X40}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_9.html", target="_self", tooltip="c_0_9 (axiom)", shape="Mrecord"];
+  "c_0_38" [label="{{⊕|{{semiri2110766477t_real|{times_times_nat|X14|X23}}|=|{times_times_real|{semiri2110766477t_real|X14}|{semiri2110766477t_real|X23}}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_38.html", target="_self", tooltip="c_0_38 (axiom)", shape="Mrecord"];
+  "c_0_149" [label="{{⊕|{{divide_divide_real|{times_times_real|X1|X5}|X6}|=|{times_times_real|X1|{divide_divide_real|X5|X6}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_149.html", target="_self", tooltip="c_0_149 (plain)", shape="Mrecord"];
+  "c_0_274" [label="{{⊕|{{times_times_real|{semiri2110766477t_real|X2}|{semiri2110766477t_real|X7}}|=|{semiri2110766477t_real|{times_times_nat|X2|X7}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_274.html", target="_self", tooltip="c_0_274 (plain)", shape="Mrecord"];
+  "c_0_300" [label="{{⊕|{{times_times_real|{semiri2110766477t_real|X2}|{divide_divide_real|{semiri2110766477t_real|X7}|X1}}|=|{divide_divide_real|{semiri2110766477t_real|{times_times_nat|X2|X7}}|X1}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_300.html", target="_self", tooltip="c_0_300 (plain)", shape="Mrecord"];
+  "c_0_314" [label="{{⊕|{{semiri2110766477t_real|X2}|=|zero_zero_real}}|{⊕|{ord_less_eq_real|zero_zero_real|{divide_divide_real|X1|{semiri2110766477t_real|X7}}}}|{⊖|{ord_less_eq_real|zero_zero_real|{divide_divide_real|{semiri2110766477t_real|{times_times_nat|X2|X7}}|X1}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_314.html", target="_self", tooltip="c_0_314 (plain)", shape="Mrecord"];
+  "c_0_315" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{divide_divide_real|{semiri2110766477t_real|{times_times_nat|X2|X7}}|X1}}}|{⊖|{ord_less_eq_real|zero_zero_real|X1}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_315.html", target="_self", tooltip="c_0_315 (plain)", shape="Mrecord"];
+  "c_0_8" -> "c_0_149" [style=dotted];
+  "c_0_9" -> "c_0_149" [style=dotted];
+  "c_0_149" -> "c_0_300";
+  "c_0_38" -> "c_0_274" [style=dotted];
+  "c_0_274" -> "c_0_300";
+  "c_0_300" -> "c_0_314";
+  "c_0_300" -> "c_0_315";
+  { rank=source; "c_0_8" "c_0_9" "c_0_38"; }
+  { rank=same; "c_0_149" "c_0_274"; }
+  { rank=same; "c_0_300"; }
+  { rank=sink; "c_0_314" "c_0_315"; }
+}

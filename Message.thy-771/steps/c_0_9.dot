@@ -1,0 +1,20 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_1" [label="c_0_1", fillcolor="#dcfce7", color="#22c55e", penwidth="1.1", URL="c_0_1.html", target="_self", tooltip="c_0_1 (conjecture)"];
+  "c_0_7" [label="c_0_7", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_7.html", target="_self", tooltip="c_0_7 (negated_conjecture)"];
+  "c_0_9" [label="c_0_9", fillcolor="#fecdd3", color="#be123c", penwidth="1.8", URL="c_0_9.html", target="_self", tooltip="c_0_9 (negated_conjecture)"];
+  "c_0_12" [label="{{⊕|{member_msg|y|{synth|{analz|h}}}}|{⊕|{member_msg|{mPair|x|y}|{synth|{analz|h}}}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_12.html", target="_self", tooltip="c_0_12 (negated_conjecture)", shape="Mrecord"];
+  "c_0_18" [label="{{⊖|{member_msg|{mPair|x|y}|{synth|{analz|h}}}}|{⊖|{member_msg|x|{synth|{analz|h}}}}|{⊖|{member_msg|y|{synth|{analz|h}}}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_18.html", target="_self", tooltip="c_0_18 (negated_conjecture)", shape="Mrecord"];
+  "c_0_30" [label="{{⊕|{member_msg|x|{synth|{analz|h}}}}|{⊕|{member_msg|{mPair|x|y}|{synth|{analz|h}}}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_30.html", target="_self", tooltip="c_0_30 (negated_conjecture)", shape="Mrecord"];
+  "c_0_1" -> "c_0_7" [style=dotted];
+  "c_0_7" -> "c_0_9";
+  "c_0_9" -> "c_0_12";
+  "c_0_9" -> "c_0_18";
+  "c_0_9" -> "c_0_30";
+  { rank=source; "c_0_1"; }
+  { rank=same; "c_0_7"; }
+  { rank=same; "c_0_9"; }
+  { rank=sink; "c_0_12" "c_0_18" "c_0_30"; }
+}

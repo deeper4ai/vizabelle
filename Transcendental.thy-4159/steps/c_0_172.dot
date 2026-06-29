@@ -1,0 +1,16 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_25" [label="{{⊖|{pi|=|zero_zero_real}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_25.html", target="_self", tooltip="c_0_25 (axiom)", shape="Mrecord"];
+  "c_0_154" [label="{{⊖|{pi|=|zero_zero_real}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_154.html", target="_self", tooltip="c_0_154 (plain)", shape="Mrecord"];
+  "c_0_172" [label="{{⊖|{pi|=|zero_zero_real}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_172.html", target="_self", tooltip="c_0_172 (plain)", shape="Mrecord"];
+  "c_0_199" [label="{{⊕|{X1|=|zero_zero_real}}|{⊖|{{times_times_real|X1|pi}|=|zero_zero_real}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_199.html", target="_self", tooltip="c_0_199 (plain)", shape="Mrecord"];
+  "c_0_25" -> "c_0_154" [style=dotted];
+  "c_0_154" -> "c_0_172";
+  "c_0_172" -> "c_0_199";
+  { rank=source; "c_0_25"; }
+  { rank=same; "c_0_154"; }
+  { rank=same; "c_0_172"; }
+  { rank=sink; "c_0_199"; }
+}

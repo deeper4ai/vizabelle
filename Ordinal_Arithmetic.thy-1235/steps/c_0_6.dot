@@ -1,0 +1,14 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_2" [label="{{⊕|{r|=|{insert1116662519od_a_a|{product_Pair_a_a|{wellorder_wo_zero_a|r}|{wellorder_wo_zero_a|r}}|bot_bo2131659635od_a_a}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_2.html", target="_self", tooltip="c_0_2 (axiom)", shape="Mrecord"];
+  "c_0_6" [label="{{⊕|{r|=|{insert1116662519od_a_a|{product_Pair_a_a|{wellorder_wo_zero_a|r}|{wellorder_wo_zero_a|r}}|bot_bo2131659635od_a_a}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_6.html", target="_self", tooltip="c_0_6 (plain)", shape="Mrecord"];
+  "c_0_9" [label="{{⊕|{{insert1116662519od_a_a|{product_Pair_a_a|{wellorder_wo_zero_a|r}|{wellorder_wo_zero_a|r}}|bot_bo2131659635od_a_a}|=|r}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_9.html", target="_self", tooltip="c_0_9 (plain)", shape="Mrecord"];
+  "c_0_2" -> "c_0_6";
+  "c_0_6" -> "c_0_9";
+  { rank=source; "c_0_2"; }
+  { rank=same; "c_0_2"; }
+  { rank=same; "c_0_6"; }
+  { rank=sink; "c_0_9"; }
+}

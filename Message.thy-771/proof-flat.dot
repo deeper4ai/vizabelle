@@ -1,0 +1,47 @@
+digraph proof {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=true, remincross=true, ranksep=0.33, bgcolor=transparent];
+  node [shape=circle, style=filled, fixedsize=true, width=0.16, height=0.16, label="", margin=0];
+  edge [color="#9aa4af", arrowhead=none, penwidth=0.8, weight=1, minlen=1];
+  "c_0_0" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_0.html", target="step-frame", tooltip="c_0_0 (axiom)"];
+  "c_0_1" [shape="triangle", fillcolor="#2e7d32", color="#2e7d32", URL="steps/c_0_1.html", target="step-frame", tooltip="c_0_1 (conjecture)"];
+  "c_0_2" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_2.html", target="step-frame", tooltip="c_0_2 (axiom)"];
+  "c_0_3" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_3.html", target="step-frame", tooltip="c_0_3 (axiom)"];
+  "c_0_4" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_4.html", target="step-frame", tooltip="c_0_4 (axiom)"];
+  "c_0_5" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_5.html", target="step-frame", tooltip="c_0_5 (axiom)"];
+  "c_0_8" [shape="circle", fillcolor="#8ecae6", color="#8ecae6", URL="steps/c_0_8.html", target="step-frame", tooltip="c_0_8 (plain)"];
+  "c_0_9" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_9.html", target="step-frame", tooltip="c_0_9 (negated_conjecture)"];
+  "c_0_27" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_27.html", target="step-frame", tooltip="c_0_27 (negated_conjecture)"];
+  "c_0_33" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_33.html", target="step-frame", tooltip="c_0_33 (negated_conjecture)"];
+  "c_0_34" [shape="circle", fillcolor="#8ecae6", color="#8ecae6", URL="steps/c_0_34.html", target="step-frame", tooltip="c_0_34 (plain)"];
+  "c_0_38" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_38.html", target="step-frame", tooltip="c_0_38 (negated_conjecture)"];
+  "c_0_39" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_39.html", target="step-frame", tooltip="c_0_39 (negated_conjecture)"];
+  "c_0_43" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_43.html", target="step-frame", tooltip="c_0_43 (negated_conjecture)"];
+  "c_0_46" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_46.html", target="step-frame", tooltip="c_0_46 (negated_conjecture)"];
+  "c_0_48" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_48.html", target="step-frame", tooltip="c_0_48 (negated_conjecture)"];
+  "c_0_49" [shape="box", fillcolor="#8b1e3f", color="#8b1e3f", URL="steps/c_0_49.html", target="step-frame", tooltip="c_0_49 (negated_conjecture)"];
+  "c_0_50" [shape="box", fillcolor="#3d1c00", color="#3d1c00", URL="steps/c_0_50.html", target="step-frame", tooltip="c_0_50 (negated_conjecture)"];
+  "c_0_0" -> "c_0_8";
+  "c_0_1" -> "c_0_9";
+  "c_0_2" -> "c_0_33";
+  "c_0_3" -> "c_0_38";
+  "c_0_4" -> "c_0_34";
+  "c_0_5" -> "c_0_50";
+  "c_0_8" -> "c_0_48";
+  "c_0_8" -> "c_0_27";
+  "c_0_9" -> "c_0_46";
+  "c_0_9" -> "c_0_38";
+  "c_0_9" -> "c_0_27";
+  "c_0_27" -> "c_0_33";
+  "c_0_33" -> "c_0_39";
+  "c_0_34" -> "c_0_49";
+  "c_0_34" -> "c_0_39";
+  "c_0_38" -> "c_0_43";
+  "c_0_39" -> "c_0_43";
+  "c_0_43" -> "c_0_49";
+  "c_0_43" -> "c_0_48";
+  "c_0_43" -> "c_0_46";
+  "c_0_46" -> "c_0_48";
+  "c_0_48" -> "c_0_50";
+  "c_0_49" -> "c_0_50";
+  { rank=sink; "c_0_50"; }
+}

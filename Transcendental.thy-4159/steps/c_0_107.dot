@@ -1,0 +1,23 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_7" [label="c_0_7", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_7.html", target="_self", tooltip="c_0_7 (axiom)"];
+  "c_0_8" [label="{{⊕|{{divide_divide_real|X11|{divide_divide_real|X15|X40}}|=|{divide_divide_real|{times_times_real|X11|X40}|X15}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_8.html", target="_self", tooltip="c_0_8 (axiom)", shape="Mrecord"];
+  "c_0_9" [label="{{⊕|{{times_times_real|X11|{divide_divide_real|X15|X40}}|=|{divide_divide_real|{times_times_real|X11|X15}|X40}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_9.html", target="_self", tooltip="c_0_9 (axiom)", shape="Mrecord"];
+  "c_0_99" [label="{{⊕|{{divide_divide_real|X1|{divide_divide_real|X1|X5}}|=|X5}}|{⊕|{X1|=|zero_zero_real}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_99.html", target="_self", tooltip="c_0_99 (plain)", shape="Mrecord"];
+  "c_0_100" [label="{{⊕|{{divide_divide_real|X1|{divide_divide_real|X5|X6}}|=|{times_times_real|X1|{divide_divide_real|X6|X5}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_100.html", target="_self", tooltip="c_0_100 (plain)", shape="Mrecord"];
+  "c_0_107" [label="{{⊕|{{times_times_real|X1|{divide_divide_real|X5|X1}}|=|X5}}|{⊕|{X1|=|zero_zero_real}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_107.html", target="_self", tooltip="c_0_107 (plain)", shape="Mrecord"];
+  "c_0_118" [label="{{⊕|{{times_times_real|X1|{divide_divide_real|X5|X1}}|=|X5}}|{⊕|{X1|=|zero_zero_real}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_118.html", target="_self", tooltip="c_0_118 (plain)", shape="Mrecord"];
+  "c_0_7" -> "c_0_99" [style=dotted];
+  "c_0_8" -> "c_0_99" [style=dotted];
+  "c_0_99" -> "c_0_107";
+  "c_0_8" -> "c_0_100" [style=dotted];
+  "c_0_9" -> "c_0_100" [style=dotted];
+  "c_0_100" -> "c_0_107";
+  "c_0_107" -> "c_0_118";
+  { rank=source; "c_0_7" "c_0_8" "c_0_9"; }
+  { rank=same; "c_0_99" "c_0_100"; }
+  { rank=same; "c_0_107"; }
+  { rank=sink; "c_0_118"; }
+}

@@ -1,0 +1,16 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_3" [label="c_0_3", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_3.html", target="_self", tooltip="c_0_3 (axiom)"];
+  "c_0_22" [label="{{⊕|{typing|X1|X6|{foldr_type_type|fun|{esk1_4|X1|X6|X3|X4}|X4}}}|{⊖|{typing|X1|{foldl_dB_dB|app|X6|X3}|X4}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_22.html", target="_self", tooltip="c_0_22 (plain)", shape="Mrecord"];
+  "c_0_28" [label="{{⊕|{typing|X1|X6|{foldr_type_type|fun|{esk1_4|X1|X6|X3|X4}|X4}}}|{⊖|{typing|X1|{foldl_dB_dB|app|X6|X3}|X4}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_28.html", target="_self", tooltip="c_0_28 (plain)", shape="Mrecord"];
+  "c_0_33" [label="{{⊖|{typings|{shift_type|e|n|t2}|as|{esk1_4|{shift_type|e|n|t2}|{app|{var|n}|a}|X3|t}}}|{⊖|{typing|{shift_type|e|n|t2}|{foldl_dB_dB|app|{var|n}|{cons_dB|a|X3}}|t}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_33.html", target="_self", tooltip="c_0_33 (negated_conjecture)", shape="Mrecord"];
+  "c_0_3" -> "c_0_22" [style=dotted];
+  "c_0_22" -> "c_0_28";
+  "c_0_28" -> "c_0_33";
+  { rank=source; "c_0_3"; }
+  { rank=same; "c_0_22"; }
+  { rank=same; "c_0_28"; }
+  { rank=sink; "c_0_33"; }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Summary of Message.thy:138</title>
+<link rel="stylesheet" href="../data/style.css">
+</head>
+<body>
+
+<main class="step proof-summary">
+  <p class="kicker">Proof</p>
+  <h1>Proof Summary of Message.thy:138</h1>
+  
+  <section class="proof-summary-section isabelle-statement">
+    <h2>Isabelle Statement</h2>
+    <div class="meta">
+      <span class="pill">source: Message.thy:138</span>
+      <span class="pill">benchmark: isa/deeper/B-mesh-th0/train2k</span>
+      <span class="pill">problem: problems/Tutorial/0035_Message/prob_00138_003649.p</span>
+    </div>
+    <h3>Lemma</h3>
+    <div class="isabelle-source-block"><pre class="isabelle-line-numbers" aria-hidden="true">137</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> keysFor_empty [simp]<span class="isar-operator">:</span> <span class="isar-string">"keysFor {} = {}"</span></pre></div>
+    <h3>Proof Excerpt</h3>
+    <div class="isabelle-source-block highlight-last-line"><pre class="isabelle-line-numbers" aria-hidden="true">137
+138</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> keysFor_empty [simp]<span class="isar-operator">:</span> <span class="isar-string">"keysFor {} = {}"</span>
+<span class="isar-command">by</span> (unfold keysFor_def, blast)</pre></div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Conjectures</h2>
+    <div class="proof-conjectures">
+      <article class="proof-conjecture">
+<h2><a href="steps/c_0_6.html">c_0_6</a></h2>
+<pre class="formula-pre"><span class="tptp-punctuation">(</span> <span class="tptp-punctuation">(</span> keysFor <span class="tptp-operator">@</span> bot_bot_set_msg <span class="tptp-punctuation">)</span>
+<span class="tptp-operator">=</span> bot_bot_set_nat <span class="tptp-punctuation">)</span></pre>
+</article>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Axioms</h2>
+    <div class="node-list">
+      <span class="node axiom">c_0_0</span>
+<span class="node axiom">c_0_1</span>
+<span class="node axiom">c_0_2</span>
+<span class="node axiom">c_0_3</span>
+<span class="node axiom">c_0_4</span>
+<span class="node axiom">c_0_5</span>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Final Contradiction</h2>
+    <div class="node-list">
+      <a class="node final-step" href="steps/c_0_41.html">c_0_41</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

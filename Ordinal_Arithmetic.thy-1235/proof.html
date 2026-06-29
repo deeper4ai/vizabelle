@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Summary of Ordinal_Arithmetic.thy:1235</title>
+<link rel="stylesheet" href="../data/style.css">
+</head>
+<body>
+
+<main class="step proof-summary">
+  <p class="kicker">Proof</p>
+  <h1>Proof Summary of Ordinal_Arithmetic.thy:1235</h1>
+  
+  <section class="proof-summary-section isabelle-statement">
+    <h2>Isabelle Statement</h2>
+    <div class="meta">
+      <span class="pill">source: Ordinal_Arithmetic.thy:1235</span>
+      <span class="pill">benchmark: isa/deeper/B-mesh-th0/train2k</span>
+      <span class="pill">problem: problems/HOL-Cardinals/0009_Ordinal_Arithmetic/prob_01235_053796.p</span>
+    </div>
+    <h3>Lemma</h3>
+    <div class="isabelle-source-block"><pre class="isabelle-line-numbers" aria-hidden="true">1220
+1221
+1222</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> oexp_monoR<span class="isar-operator">:</span>
+  <span class="isar-keyword">assumes</span> <span class="isar-string">"oone &lt;o r"</span> <span class="isar-string">"s &lt;o t"</span>
+  <span class="isar-keyword">shows</span>   <span class="isar-string">"r ^o s &lt;o r ^o t"</span> (<span class="isar-keyword">is</span> <span class="isar-string">"?L &lt;o ?R"</span>)</pre></div>
+    <h3>Proof Excerpt</h3>
+    <div class="isabelle-source-block highlight-last-line"><pre class="isabelle-line-numbers" aria-hidden="true">1230
+1231
+1232
+1233
+1234
+1235</pre><pre class="isabelle-source"><span class="isar-command">have</span> <span class="isar-string">"Field r ≠ {}"</span> <span class="isar-command">by</span> (metis assms(<span class="isar-number">1</span>) internalize_ordLess not_psubset_empty)
+<span class="isar-command">moreover</span>
+{ <span class="isar-command">assume</span> <span class="isar-string">"Field r = {r.zero}"</span>
+  <span class="isar-command">hence</span> <span class="isar-string">"r = {(r.zero, r.zero)}"</span> <span class="isar-command">using</span> refl_onD[OF r.REFL, of r.zero] <span class="isar-command">unfolding</span> Field_def <span class="isar-command">by</span> auto
+  <span class="isar-command">hence</span> <span class="isar-string">"r =o oone"</span> <span class="isar-command">by</span> (metis oone_ordIso ordIso_symmetric)
+  <span class="isar-command">with</span> not_ordLess_ordIso[OF assms(<span class="isar-number">1</span>)] <span class="isar-command">have</span> False <span class="isar-command">by</span> (metis ordIso_symmetric)</pre></div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Conjectures</h2>
+    <div class="proof-conjectures">
+      <span class="empty">None</span>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Axioms</h2>
+    <div class="node-list">
+      <span class="node axiom">c_0_0</span>
+<span class="node axiom">c_0_1</span>
+<span class="node axiom">c_0_2</span>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Final Contradiction</h2>
+    <div class="node-list">
+      <a class="node final-step" href="steps/c_0_14.html">c_0_14</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

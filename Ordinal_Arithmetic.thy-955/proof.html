@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Summary of Ordinal_Arithmetic.thy:955</title>
+<link rel="stylesheet" href="../data/style.css">
+</head>
+<body>
+
+<main class="step proof-summary">
+  <p class="kicker">Proof</p>
+  <h1>Proof Summary of Ordinal_Arithmetic.thy:955</h1>
+  
+  <section class="proof-summary-section isabelle-statement">
+    <h2>Isabelle Statement</h2>
+    <div class="meta">
+      <span class="pill">source: Ordinal_Arithmetic.thy:955</span>
+      <span class="pill">benchmark: isa/deeper/B-mesh-th0/train2k</span>
+      <span class="pill">problem: problems/HOL-Cardinals/0009_Ordinal_Arithmetic/prob_00955_041225.p</span>
+    </div>
+    <h3>Lemma</h3>
+    <div class="isabelle-source-block"><pre class="isabelle-line-numbers" aria-hidden="true">949
+950
+951</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> oexp_empty2[simp]<span class="isar-operator">:</span>
+  <span class="isar-keyword">assumes</span> <span class="isar-string">"Well_order r"</span> <span class="isar-string">"r ≠ {}"</span>
+  <span class="isar-keyword">shows</span> <span class="isar-string">"{} ^o r = {}"</span></pre></div>
+    <h3>Proof Excerpt</h3>
+    <div class="isabelle-source-block highlight-last-line"><pre class="isabelle-line-numbers" aria-hidden="true">950
+951
+952
+953
+954
+955</pre><pre class="isabelle-source">  <span class="isar-keyword">assumes</span> <span class="isar-string">"Well_order r"</span> <span class="isar-string">"r ≠ {}"</span>
+  <span class="isar-keyword">shows</span> <span class="isar-string">"{} ^o r = {}"</span>
+<span class="isar-command">proof</span> <span class="isar-operator">-</span>
+  <span class="isar-command">from</span> assms(<span class="isar-number">2</span>) <span class="isar-command">have</span> <span class="isar-string">"Field r ≠ {}"</span> <span class="isar-command">unfolding</span> Field_def <span class="isar-command">by</span> auto
+  <span class="isar-command">thus</span> <span class="isar-variable">?thesis</span>
+    <span class="isar-command">by</span> (simp add<span class="isar-operator">:</span> assms(<span class="isar-number">1</span>) wo_rel2.intro wo_rel2.oexp_empty)</pre></div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Conjectures</h2>
+    <div class="proof-conjectures">
+      <article class="proof-conjecture">
+<h2><a href="steps/c_0_1.html">c_0_1</a></h2>
+<pre class="formula-pre"><span class="tptp-punctuation">(</span> <span class="tptp-punctuation">(</span> ordinal_wo_oexp_b_a <span class="tptp-operator">@</span> bot_bo1343651123od_b_b <span class="tptp-operator">@</span> r <span class="tptp-punctuation">)</span>
+<span class="tptp-operator">=</span> bot_bo1798880249_b_a_b <span class="tptp-punctuation">)</span></pre>
+</article>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Axioms</h2>
+    <div class="node-list">
+      <span class="node axiom">c_0_0</span>
+<span class="node axiom">c_0_2</span>
+<span class="node axiom">c_0_3</span>
+<span class="node axiom">c_0_4</span>
+<span class="node axiom">c_0_5</span>
+<span class="node axiom">c_0_6</span>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Final Contradiction</h2>
+    <div class="node-list">
+      <a class="node final-step" href="steps/c_0_33.html">c_0_33</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

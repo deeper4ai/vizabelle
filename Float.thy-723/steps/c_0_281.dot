@@ -1,0 +1,20 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_46" [label="{{⊕|{{ring_1_of_int_real|{times_times_int|X31|X5}}|=|{times_times_real|{ring_1_of_int_real|X31}|{ring_1_of_int_real|X5}}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_46.html", target="_self", tooltip="c_0_46 (axiom)", shape="Mrecord"];
+  "c_0_256" [label="{{⊕|{{times_times_real|{ring_1_of_int_real|X1}|{ring_1_of_int_real|X3}}|=|{ring_1_of_int_real|{times_times_int|X1|X3}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_256.html", target="_self", tooltip="c_0_256 (plain)", shape="Mrecord"];
+  "c_0_281" [label="{{⊕|{{times_times_real|{ring_1_of_int_real|X1}|{ring_1_of_int_real|X3}}|=|{ring_1_of_int_real|{times_times_int|X1|X3}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_281.html", target="_self", tooltip="c_0_281 (plain)", shape="Mrecord"];
+  "c_0_303" [label="{{⊕|{{times_times_real|{ring_1_of_int_real|X1}|{times_times_real|{ring_1_of_int_real|X3}|X2}}|=|{times_times_real|{ring_1_of_int_real|{times_times_int|X1|X3}}|X2}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_303.html", target="_self", tooltip="c_0_303 (plain)", shape="Mrecord"];
+  "c_0_318" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{times_times_real|{ring_1_of_int_real|{times_times_int|X1|X3}}|X2}}}|{⊖|{ord_less_eq_real|zero_zero_real|{ring_1_of_int_real|{times_times_int|X1|X3}}}}|{⊖|{ord_less_eq_real|zero_zero_real|X2}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_318.html", target="_self", tooltip="c_0_318 (plain)", shape="Mrecord"];
+  "c_0_324" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{ring_1_of_int_real|{times_times_int|X1|X1}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_324.html", target="_self", tooltip="c_0_324 (plain)", shape="Mrecord"];
+  "c_0_46" -> "c_0_256" [style=dotted];
+  "c_0_256" -> "c_0_281";
+  "c_0_281" -> "c_0_303";
+  "c_0_281" -> "c_0_318";
+  "c_0_281" -> "c_0_324";
+  { rank=source; "c_0_46"; }
+  { rank=same; "c_0_256"; }
+  { rank=same; "c_0_281"; }
+  { rank=sink; "c_0_303" "c_0_318" "c_0_324"; }
+}

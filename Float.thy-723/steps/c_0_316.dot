@@ -1,0 +1,24 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_8" [label="{{⊕|{{real_of_float|{float2|X793|X794}}|=|{times_times_real|{ring_1_of_int_real|X793}|{powr_real|{numeral_numeral_real|{bit0|one}}|{ring_1_of_int_real|X794}}}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_8.html", target="_self", tooltip="c_0_8 (axiom)", shape="Mrecord"];
+  "c_0_33" [label="{{⊕|{times_times_real|=|?}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_33.html", target="_self", tooltip="c_0_33 (axiom)", shape="Mrecord"];
+  "c_0_43" [label="c_0_43", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_43.html", target="_self", tooltip="c_0_43 (axiom)"];
+  "c_0_44" [label="{{⊕|{{times_times_real|{times_times_real|X6|X17}|X18}|=|{times_times_real|X6|{times_times_real|X17|X18}}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_44.html", target="_self", tooltip="c_0_44 (axiom)", shape="Mrecord"];
+  "c_0_300" [label="{{⊕|{ord_less_eq_real|{times_times_real|X2|X4}|zero_zero_real}}|{⊕|{ord_less_eq_real|zero_zero_real|X6}}|{⊖|{ord_less_eq_real|zero_zero_real|{times_times_real|X2|{times_times_real|X4|X6}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_300.html", target="_self", tooltip="c_0_300 (plain)", shape="Mrecord"];
+  "c_0_301" [label="{{⊕|{{times_times_real|{powr_real|{numeral_numeral_real|{bit0|one}}|{ring_1_of_int_real|X1}}|{ring_1_of_int_real|X3}}|=|{real_of_float|{float2|X3|X1}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_301.html", target="_self", tooltip="c_0_301 (plain)", shape="Mrecord"];
+  "c_0_316" [label="{{⊕|{ord_less_eq_real|{times_times_real|X2|{powr_real|{numeral_numeral_real|{bit0|one}}|{ring_1_of_int_real|X1}}}|zero_zero_real}}|{⊕|{ord_less_eq_real|zero_zero_real|{ring_1_of_int_real|X3}}}|{⊖|{ord_less_eq_real|zero_zero_real|{times_times_real|X2|{real_of_float|{float2|X3|X1}}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_316.html", target="_self", tooltip="c_0_316 (plain)", shape="Mrecord"];
+  "c_0_327" [label="{{⊕|$false}}", fillcolor="#ffe4e6", color="#fb7185", penwidth="1.1", URL="c_0_327.html", target="_self", tooltip="c_0_327 (plain)", shape="Mrecord"];
+  "c_0_43" -> "c_0_300" [style=dotted];
+  "c_0_44" -> "c_0_300" [style=dotted];
+  "c_0_300" -> "c_0_316";
+  "c_0_8" -> "c_0_301" [style=dotted];
+  "c_0_33" -> "c_0_301" [style=dotted];
+  "c_0_301" -> "c_0_316";
+  "c_0_316" -> "c_0_327";
+  { rank=source; "c_0_8" "c_0_33" "c_0_43" "c_0_44"; }
+  { rank=same; "c_0_300" "c_0_301"; }
+  { rank=same; "c_0_316"; }
+  { rank=sink; "c_0_327"; }
+}

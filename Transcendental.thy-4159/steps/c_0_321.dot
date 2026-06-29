@@ -1,0 +1,35 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_33" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{sin_real|{divide_divide_real|pi|{semiri2110766477t_real|n}}}}}}", fillcolor="#dcfce7", color="#22c55e", penwidth="1.1", URL="c_0_33.html", target="_self", tooltip="c_0_33 (conjecture)", shape="Mrecord"];
+  "c_0_34" [label="c_0_34", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_34.html", target="_self", tooltip="c_0_34 (axiom)"];
+  "c_0_35" [label="c_0_35", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_35.html", target="_self", tooltip="c_0_35 (axiom)"];
+  "c_0_36" [label="c_0_36", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_36.html", target="_self", tooltip="c_0_36 (axiom)"];
+  "c_0_39" [label="c_0_39", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_39.html", target="_self", tooltip="c_0_39 (axiom)"];
+  "c_0_49" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{semiri2110766477t_real|X23}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_49.html", target="_self", tooltip="c_0_49 (axiom)", shape="Mrecord"];
+  "c_0_53" [label="{{⊕|{ord_less_eq_real|zero_zero_real|pi}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_53.html", target="_self", tooltip="c_0_53 (axiom)", shape="Mrecord"];
+  "c_0_310" [label="{{⊖|{ord_less_eq_real|zero_zero_real|{divide_divide_real|pi|{semiri2110766477t_real|n}}}}|{⊖|{ord_less_eq_real|{semiri2110766477t_real|n}|zero_zero_real}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_310.html", target="_self", tooltip="c_0_310 (negated_conjecture)", shape="Mrecord"];
+  "c_0_276" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{divide_divide_real|X1|X5}}}|{⊖|{ord_less_eq_real|zero_zero_real|X5}}|{⊖|{ord_less_eq_real|zero_zero_real|X1}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_276.html", target="_self", tooltip="c_0_276 (plain)", shape="Mrecord"];
+  "c_0_301" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{semiri2110766477t_real|X2}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_301.html", target="_self", tooltip="c_0_301 (plain)", shape="Mrecord"];
+  "c_0_294" [label="{{⊕|{ord_less_eq_real|zero_zero_real|pi}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_294.html", target="_self", tooltip="c_0_294 (plain)", shape="Mrecord"];
+  "c_0_321" [label="{{⊖|{ord_less_eq_real|{semiri2110766477t_real|n}|zero_zero_real}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.8", URL="c_0_321.html", target="_self", tooltip="c_0_321 (negated_conjecture)", shape="Mrecord"];
+  "c_0_323" [label="{{⊕|$false}}", fillcolor="#ffe4e6", color="#fb7185", penwidth="1.1", URL="c_0_323.html", target="_self", tooltip="c_0_323 (plain)", shape="Mrecord"];
+  "c_0_33" -> "c_0_310" [style=dotted];
+  "c_0_34" -> "c_0_310" [style=dotted];
+  "c_0_35" -> "c_0_310" [style=dotted];
+  "c_0_36" -> "c_0_310" [style=dotted];
+  "c_0_53" -> "c_0_310" [style=dotted];
+  "c_0_310" -> "c_0_321";
+  "c_0_39" -> "c_0_276" [style=dotted];
+  "c_0_276" -> "c_0_321";
+  "c_0_49" -> "c_0_301" [style=dotted];
+  "c_0_301" -> "c_0_321";
+  "c_0_53" -> "c_0_294" [style=dotted];
+  "c_0_294" -> "c_0_321";
+  "c_0_321" -> "c_0_323";
+  { rank=source; "c_0_33" "c_0_34" "c_0_35" "c_0_36" "c_0_39" "c_0_49" "c_0_53"; }
+  { rank=same; "c_0_310" "c_0_276" "c_0_301" "c_0_294"; }
+  { rank=same; "c_0_321"; }
+  { rank=sink; "c_0_323"; }
+}

@@ -1,0 +1,13 @@
+digraph proof {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=true, remincross=true, ranksep=0.33, bgcolor=transparent];
+  node [shape=circle, style=filled, fixedsize=true, width=0.16, height=0.16, label="", margin=0];
+  edge [color="#9aa4af", arrowhead=none, penwidth=0.8, weight=1, minlen=1];
+  "c_0_0" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_0.html", target="step-frame", tooltip="c_0_0 (axiom)"];
+  "c_0_1" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_1.html", target="step-frame", tooltip="c_0_1 (axiom)"];
+  "c_0_2" [shape="circle", fillcolor="#1f4e79", color="#1f4e79", URL="steps/c_0_2.html", target="step-frame", tooltip="c_0_2 (axiom)"];
+  "c_0_14" [shape="circle", fillcolor="#3d1c00", color="#3d1c00", URL="steps/c_0_14.html", target="step-frame", tooltip="c_0_14 (plain)"];
+  "c_0_0" -> "c_0_14";
+  "c_0_1" -> "c_0_14";
+  "c_0_2" -> "c_0_14";
+  { rank=sink; "c_0_14"; }
+}

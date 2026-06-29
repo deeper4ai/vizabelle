@@ -1,0 +1,10 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_24" [label="c_0_24", fillcolor="#dbeafe", color="#2563eb", penwidth="1.8", URL="c_0_24.html", target="_self", tooltip="c_0_24 (axiom)"];
+  "c_0_113" [label="{{⊖|{ord_less_eq_real|one_one_real|X3498}}|{⊖|{ord_less_eq_real|zero_zero_real|X3499}}|{⊕|{ord_less_eq_real|one_one_real|{powr_real|X3498|X3499}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_113.html", target="_self", tooltip="c_0_113 (plain)", shape="Mrecord"];
+  "c_0_24" -> "c_0_113";
+  { rank=same; "c_0_24"; }
+  { rank=sink; "c_0_113"; }
+}

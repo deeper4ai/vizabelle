@@ -1,0 +1,14 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_16" [label="{{⊕|{ord_less_eq_real|X6|X6}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_16.html", target="_self", tooltip="c_0_16 (axiom)", shape="Mrecord"];
+  "c_0_91" [label="{{⊕|{ord_less_eq_real|X2185|X2185}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_91.html", target="_self", tooltip="c_0_91 (plain)", shape="Mrecord"];
+  "c_0_115" [label="{{⊕|{ord_less_eq_real|X2|X2}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_115.html", target="_self", tooltip="c_0_115 (plain)", shape="Mrecord"];
+  "c_0_16" -> "c_0_91";
+  "c_0_91" -> "c_0_115";
+  { rank=source; "c_0_16"; }
+  { rank=same; "c_0_16"; }
+  { rank=same; "c_0_91"; }
+  { rank=sink; "c_0_115"; }
+}

@@ -1,0 +1,22 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_8" [label="{{⊕|{{divide_divide_real|X11|{divide_divide_real|X15|X40}}|=|{divide_divide_real|{times_times_real|X11|X40}|X15}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_8.html", target="_self", tooltip="c_0_8 (axiom)", shape="Mrecord"];
+  "c_0_9" [label="{{⊕|{{times_times_real|X11|{divide_divide_real|X15|X40}}|=|{divide_divide_real|{times_times_real|X11|X15}|X40}}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_9.html", target="_self", tooltip="c_0_9 (axiom)", shape="Mrecord"];
+  "c_0_39" [label="c_0_39", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_39.html", target="_self", tooltip="c_0_39 (axiom)"];
+  "c_0_276" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{divide_divide_real|X1|X5}}}|{⊖|{ord_less_eq_real|zero_zero_real|X5}}|{⊖|{ord_less_eq_real|zero_zero_real|X1}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_276.html", target="_self", tooltip="c_0_276 (plain)", shape="Mrecord"];
+  "c_0_149" [label="{{⊕|{{divide_divide_real|{times_times_real|X1|X5}|X6}|=|{times_times_real|X1|{divide_divide_real|X5|X6}}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_149.html", target="_self", tooltip="c_0_149 (plain)", shape="Mrecord"];
+  "c_0_302" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{times_times_real|X1|{divide_divide_real|X5|X6}}}}|{⊖|{ord_less_eq_real|zero_zero_real|X6}}|{⊖|{ord_less_eq_real|zero_zero_real|{times_times_real|X1|X5}}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.8", URL="c_0_302.html", target="_self", tooltip="c_0_302 (plain)", shape="Mrecord"];
+  "c_0_315" [label="{{⊕|{ord_less_eq_real|zero_zero_real|{divide_divide_real|{semiri2110766477t_real|{times_times_nat|X2|X7}}|X1}}}|{⊖|{ord_less_eq_real|zero_zero_real|X1}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_315.html", target="_self", tooltip="c_0_315 (plain)", shape="Mrecord"];
+  "c_0_39" -> "c_0_276" [style=dotted];
+  "c_0_276" -> "c_0_302";
+  "c_0_8" -> "c_0_149" [style=dotted];
+  "c_0_9" -> "c_0_149" [style=dotted];
+  "c_0_149" -> "c_0_302";
+  "c_0_302" -> "c_0_315";
+  { rank=source; "c_0_8" "c_0_9" "c_0_39"; }
+  { rank=same; "c_0_276" "c_0_149"; }
+  { rank=same; "c_0_302"; }
+  { rank=sink; "c_0_315"; }
+}

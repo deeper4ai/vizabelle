@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Summary of StrongNorm.thy:123</title>
+<link rel="stylesheet" href="../data/style.css">
+</head>
+<body>
+
+<main class="step proof-summary">
+  <p class="kicker">Proof</p>
+  <h1>Proof Summary of StrongNorm.thy:123</h1>
+  
+  <section class="proof-summary-section isabelle-statement">
+    <h2>Isabelle Statement</h2>
+    <div class="meta">
+      <span class="pill">source: StrongNorm.thy:123</span>
+      <span class="pill">benchmark: isa/deeper/B-mesh-th0/train2k</span>
+      <span class="pill">problem: problems/HOL-Proofs-Lambda/0010_StrongNorm/prob_00123_003167.p</span>
+    </div>
+    <h3>Lemma</h3>
+    <div class="isabelle-source-block"><pre class="isabelle-line-numbers" aria-hidden="true">90
+91
+92
+93</pre><pre class="isabelle-source"><span class="isar-command">lemma</span> subst_type_IT<span class="isar-operator">:</span>
+  <span class="isar-string">"⋀t e T u i. IT t ⟹ e⟨i:U⟩ ⊢ t : T ⟹
+    IT u ⟹ e ⊢ u : U ⟹ IT (t[u/i])"</span>
+  (<span class="isar-keyword">is</span> <span class="isar-string">"PROP ?P U"</span> <span class="isar-keyword">is</span> <span class="isar-string">"⋀t e T u i. _ ⟹ PROP ?Q t e T u i U"</span>)</pre></div>
+    <h3>Proof Excerpt</h3>
+    <div class="isabelle-source-block highlight-last-line"><pre class="isabelle-line-numbers" aria-hidden="true">118
+119
+120
+121
+122
+123</pre><pre class="isabelle-source"><span class="isar-command">case</span> (Cons a as)
+<span class="isar-command">with</span> nT <span class="isar-command">have</span> <span class="isar-string">"e⟨i:T⟩ ⊢ Var n ° a °° as : T'"</span> <span class="isar-command">by</span> simp
+<span class="isar-command">then</span> <span class="isar-command">obtain</span> Ts
+    <span class="isar-keyword">where</span> headT<span class="isar-operator">:</span> <span class="isar-string">"e⟨i:T⟩ ⊢ Var n ° a : Ts ⇛ T'"</span>
+    <span class="isar-keyword">and</span> argsT<span class="isar-operator">:</span> <span class="isar-string">"e⟨i:T⟩ ⊩ as : Ts"</span>
+  <span class="isar-command">by</span> (rule list_app_typeE)</pre></div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Conjectures</h2>
+    <div class="proof-conjectures">
+      <article class="proof-conjecture">
+<h2><a href="steps/c_0_0.html">c_0_0</a></h2>
+<pre class="formula-pre"><span class="tptp-connective">?</span> <span class="tptp-punctuation">[</span><span class="tptp-variable">X1369</span><span class="tptp-punctuation">:</span> list_type<span class="tptp-punctuation">]</span> <span class="tptp-punctuation">:</span>
+  <span class="tptp-punctuation">(</span> <span class="tptp-punctuation">(</span> typing <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> shift_type <span class="tptp-operator">@</span> e <span class="tptp-operator">@</span> i <span class="tptp-operator">@</span> t2 <span class="tptp-punctuation">)</span> <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> app <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> var <span class="tptp-operator">@</span> n <span class="tptp-punctuation">)</span> <span class="tptp-operator">@</span> a <span class="tptp-punctuation">)</span> <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> foldr_type_type <span class="tptp-operator">@</span> fun <span class="tptp-operator">@</span> <span class="tptp-variable">X1369</span> <span class="tptp-operator">@</span> t <span class="tptp-punctuation">)</span> <span class="tptp-punctuation">)</span>
+  <span class="tptp-connective">&amp;</span> <span class="tptp-punctuation">(</span> typings <span class="tptp-operator">@</span> <span class="tptp-punctuation">(</span> shift_type <span class="tptp-operator">@</span> e <span class="tptp-operator">@</span> i <span class="tptp-operator">@</span> t2 <span class="tptp-punctuation">)</span> <span class="tptp-operator">@</span> as <span class="tptp-operator">@</span> <span class="tptp-variable">X1369</span> <span class="tptp-punctuation">)</span>
+  <span class="tptp-connective">&amp;</span> <span class="tptp-connective">~</span> thesis <span class="tptp-punctuation">)</span></pre>
+</article>
+<article class="proof-conjecture">
+<h2><a href="steps/c_0_1.html">c_0_1</a></h2>
+<pre class="formula-pre">thesis</pre>
+</article>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Axioms</h2>
+    <div class="node-list">
+      <span class="node axiom">c_0_2</span>
+<span class="node axiom">c_0_3</span>
+<span class="node axiom">c_0_4</span>
+<span class="node axiom">c_0_5</span>
+<span class="node axiom">c_0_6</span>
+    </div>
+  </section>
+  <section class="proof-summary-section">
+    <h2>Final Contradiction</h2>
+    <div class="node-list">
+      <a class="node final-step" href="steps/c_0_37.html">c_0_37</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

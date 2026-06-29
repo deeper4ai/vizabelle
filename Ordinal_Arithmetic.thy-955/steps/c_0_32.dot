@@ -1,0 +1,28 @@
+digraph proof_step {
+  graph [rankdir=TB, overlap=false, splines=ortho, concentrate=false, remincross=true, ranksep=0.55, nodesep=0.28, bgcolor=transparent];
+  node [shape=box, style="rounded,filled", margin="0.08,0.04", fontname="Arial", fontsize=10, color="#9aa4af", penwidth=1.1];
+  edge [color="#8792a0", arrowhead=normal, arrowsize=0.55, penwidth=0.9];
+  "c_0_1" [label="{{⊕|{{ordinal_wo_oexp_b_a|bot_bo1343651123od_b_b|r}|=|bot_bo1798880249_b_a_b}}}", fillcolor="#dcfce7", color="#22c55e", penwidth="1.1", URL="c_0_1.html", target="_self", tooltip="c_0_1 (conjecture)", shape="Mrecord"];
+  "c_0_2" [label="c_0_2", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_2.html", target="_self", tooltip="c_0_2 (axiom)"];
+  "c_0_3" [label="{{⊕|{{field_b|bot_bo1343651123od_b_b}|=|bot_bot_set_b}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_3.html", target="_self", tooltip="c_0_3 (axiom)", shape="Mrecord"];
+  "c_0_5" [label="{{⊖|{{field_a|r}|=|bot_bot_set_a}}}", fillcolor="#dbeafe", color="#2563eb", penwidth="1.1", URL="c_0_5.html", target="_self", tooltip="c_0_5 (axiom)", shape="Mrecord"];
+  "c_0_27" [label="{{⊖|{{ordinal_wo_oexp_b_a|bot_bo1343651123od_b_b|r}|=|bot_bo1798880249_b_a_b}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.1", URL="c_0_27.html", target="_self", tooltip="c_0_27 (negated_conjecture)", shape="Mrecord"];
+  "c_0_28" [label="{{⊕|{{ordinal_wo_oexp_b_a|X3|X2}|=|bot_bo1798880249_b_a_b}}|{⊕|{{field_a|X2}|=|bot_bot_set_a}}|{⊖|{{field_b|X3}|=|bot_bot_set_b}}|{⊖|{ordinal_wo_rel2_b_a|X3|X2}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_28.html", target="_self", tooltip="c_0_28 (plain)", shape="Mrecord"];
+  "c_0_24" [label="{{⊕|{{field_b|bot_bo1343651123od_b_b}|=|bot_bot_set_b}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_24.html", target="_self", tooltip="c_0_24 (plain)", shape="Mrecord"];
+  "c_0_29" [label="{{⊖|{{field_a|r}|=|bot_bot_set_a}}}", fillcolor="#eff6ff", color="#60a5fa", penwidth="1.1", URL="c_0_29.html", target="_self", tooltip="c_0_29 (plain)", shape="Mrecord"];
+  "c_0_32" [label="{{⊖|{ordinal_wo_rel2_b_a|bot_bo1343651123od_b_b|r}}}", fillcolor="#fecdd3", color="#be123c", penwidth="1.8", URL="c_0_32.html", target="_self", tooltip="c_0_32 (negated_conjecture)", shape="Mrecord"];
+  "c_0_33" [label="{{⊕|$false}}", fillcolor="#ffe4e6", color="#fb7185", penwidth="1.1", URL="c_0_33.html", target="_self", tooltip="c_0_33 (plain)", shape="Mrecord"];
+  "c_0_1" -> "c_0_27" [style=dotted];
+  "c_0_27" -> "c_0_32";
+  "c_0_2" -> "c_0_28" [style=dotted];
+  "c_0_28" -> "c_0_32";
+  "c_0_3" -> "c_0_24" [style=dotted];
+  "c_0_24" -> "c_0_32";
+  "c_0_5" -> "c_0_29" [style=dotted];
+  "c_0_29" -> "c_0_32";
+  "c_0_32" -> "c_0_33";
+  { rank=source; "c_0_1" "c_0_2" "c_0_3" "c_0_5"; }
+  { rank=same; "c_0_27" "c_0_28" "c_0_24" "c_0_29"; }
+  { rank=same; "c_0_32"; }
+  { rank=sink; "c_0_33"; }
+}
