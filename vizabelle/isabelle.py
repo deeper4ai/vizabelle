@@ -117,8 +117,9 @@ KEYWORDS = frozenset(
 )
 
 WORD_RE = re.compile(r"[A-Za-z_][A-Za-z0-9_'.]*")
-SCHEMATIC_RE = re.compile(r"\?[A-Za-z_][A-Za-z0-9_'.]*")
-TYPE_RE = re.compile(r"\??'[A-Za-z_][A-Za-z0-9_'.]*")
+# a dot belongs to a variable only before its index (?x.1): "\<forall>x\<in>?A. ..."
+SCHEMATIC_RE = re.compile(r"\?[A-Za-z_][A-Za-z0-9_']*(?:\.[0-9]+)?")
+TYPE_RE = re.compile(r"\??'[A-Za-z_][A-Za-z0-9_']*(?:\.[0-9]+)?")
 NUMBER_RE = re.compile(r"\d+(?:\.\d+)?")
 ASCII_OPERATOR_RE = re.compile(r"[!#$%&*+\-./:<=>?@^|~]+")
 OPERATOR_GROUPS = frozenset({"arrow", "operator", "punctuation", "relation"})

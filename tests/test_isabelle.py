@@ -37,6 +37,13 @@ def test_lexical_highlighting() -> None:
     assert '<span class="isar-operator">:</span>' in rendered
 
 
+def test_schematic_variables_stop_before_binder_dot() -> None:
+    rendered = highlight_isabelle("\\<forall>x\\<in>?A. ?x.1 \\<le> ?'b.2", SYMBOLS)
+    assert '<span class="isar-variable">?A</span><span class="isar-operator">.</span>' in rendered
+    assert '<span class="isar-variable">?x.1</span>' in rendered
+    assert '<span class="isar-type-variable">?\'b.2</span>' in rendered
+
+
 def test_summary_excerpts_have_source_line_numbers() -> None:
     proof = Path(__file__).resolve().parents[1] / "examples" / "proofs" / "prob_00123_003167.p.gz"
     statement = isabelle_statement_from_proof(proof)
